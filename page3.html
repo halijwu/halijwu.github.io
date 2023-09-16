@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="stylesheet" href="../Assignment 1/css/style.css"> 
+    </head>
+    <body>
+        <!--Nav Bar-->
+        <ul>
+            <li><a href="../Assignment 1/homepage.html">Home</a></li>
+            <li><a href="../Assignment 1/page1.html">Page 1</a></li>
+            <li><a href="../Assignment 1/page2.html">Page 2</a></li>
+            <li><a href="../Assignment 1/page3.html">Page 3</a></li>
+            <li><a href="../Assignment 1/page4.html">Page 4</a></li>
+        </ul>
+
+        <!--Form to submit inquiries about SF and upcoming content-->
+        <form action="http://www.example.com/review.php" method="get">
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label>
+                    Name: <input type="text" name="name" size="30" maxlength="100">
+                </label>
+                <br/>
+                <label>
+                    Email: <input type="email" name="email" size="30" maxlength="100">
+                </label>
+                <br/>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Your Questions:</legend>
+                <p>
+                    <label for="hear-about">What types of content do you want to see more of about San Francisco?</label>
+                    <select name="referrer" id="hear-about">
+                        <option value="food">Food Spots</option>
+                        <option value="culture">Cultural Attractions</option>
+                        <option value="nature">Nature</option>
+                        <option value="nightlife">Nightlife</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p>
+                    Would you recommend our website to a friend visiting SF?<br/>
+                    <label>
+                        <input type="radio" name="rating" value="yes"/>Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="no"/>No
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="maybe"/>Maybe
+                    </label>
+                </p>
+                <p>
+                    <label for="comments">Comments:</label>
+                    <br/>
+                    <textarea rows="4" cols="40" id="comments"></textarea>
+                </p>
+                <label>
+                    <input type="checkbox" name="subscribe" checked="checked"/>Sign me up for email updates
+                </label>
+                <br/>
+                <input type="submit" value="Submit review"/>
+            </fieldset>
+        </form>
+        <footer>
+            <p>Author: Hali Wu</p>
+            <p><a href="hali.jia.w@gmail.com">hali.jia.w@gmail.com</a></p>
+            <p><img src="../Assignment 1/imgs/headshot.JPG" alt="headshot of author" width="25" height="25"></p>
+        </footer>
+    </body>
+</html>
