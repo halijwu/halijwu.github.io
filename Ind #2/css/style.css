@@ -1,0 +1,148 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    'nav nav nav' 10%
+    'ban ban ban' 30%
+    'city1 city2 city3' 50%
+    'footer footer footer' 10%;
+}
+
+
+li {
+    display: inline;
+    padding: 5%;
+}
+
+
+nav {
+    background-color: white;
+    grid-area: nav;
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+.Banner {
+    background-image: url(../imgs/sfbanner.png);
+    background-repeat: no-repeat;
+    background-size: 1500px 248px;
+    grid-area: ban;
+    font-size: 35px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.City1 {
+    background-image: url(../imgs/SF.JPG);
+    background-size: 726.25px 1095.5px;
+    background-repeat: no-repeat;
+    grid-area: city1;
+    margin: 35px;
+    font-size: 25px;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 150px 50px;
+    text-align: center;
+}
+
+.City2 {
+    background-image: url(../imgs/bigsur.JPG);
+    background-size: 726.25px 1095.5px;
+    background-repeat: no-repeat;
+    grid-area: city2;
+    margin: 35px;
+    font-size: 25px;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 150px 50px;
+    text-align: center;
+}
+
+.City3 {
+    background-image: url(../imgs/santacruz.JPG);
+    background-size: 726.25px 1095.5px;
+    background-repeat: no-repeat;
+    grid-area: city3;
+    margin: 35px;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    padding: 150px 50px;
+    text-align: center;
+}
+
+footer {
+    background-image: url(../imgs/sfscenery.png);
+    grid-area: footer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+@media screen and (max-width:700px) {
+    .container {
+        min-height: 100%;
+        display: grid;
+        grid-template: 
+        'nav' 10%
+        'ban' 25%
+        'city1' 20%
+        'city2' 20%
+        'city3' 20%
+        'footer' 5%;
+    } 
+
+    .City1 {
+        background-image: url(../imgs/sfformobile.png);
+        background-size: 914px 292px;
+        background-repeat: no-repeat;
+        grid-area: city1;
+        margin: 35px;
+        font-size: 25px;
+        color: black;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 50px 50px;
+        text-align: center;
+    }
+
+    .City2 {
+        background-image: url(../imgs/bigsurformobile.png);
+        background-size: 988px 458px;
+        background-repeat: no-repeat;
+        grid-area: city2;
+        margin: 35px;
+        font-size: 25px;
+        color: black;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 50px 50px;
+        text-align: center;
+    }
+
+    .City3 {
+        background-image: url(../imgs/santacruzformobile.png);
+        background-size: 956px 388px;
+        background-repeat: no-repeat;
+        grid-area: city3;
+        margin: 35px;
+        font-size: 25px;
+        color: black;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 50px 50px;
+        text-align: center;
+    }
+}
